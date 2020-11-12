@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="747.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="200.0" prefHeight="68.0" prefWidth="548.0" style="-fx-background-color: #597da3;">
+         <effect>
+            <DropShadow color="#0000001f" />
+         </effect>
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="43.0" layoutX="491.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" rotate="53.7">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+            <TextField focusTraversable="false" layoutX="327.0" layoutY="20.0" prefHeight="29.0" prefWidth="155.0" promptText="search" style="-fx-background-color: #fff; -fx-border-color: #fff;">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="24.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/liist.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="460.0" prefWidth="200.0" style="-fx-background-color: #597da3;">
+         <effect>
+            <DropShadow color="#00000040" />
+         </effect>
+         <children>
+            <Button layoutX="14.0" layoutY="130.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Java">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#3c3c3c" fontSmoothingType="LCD" layoutX="41.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questionnaire" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Separator focusTraversable="false" layoutX="14.0" layoutY="110.0" prefHeight="3.0" prefWidth="175.0" style="-fx-background-color: #ccc; -fx-border-style: solid; -fx-border-color: #333;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <Button layoutX="14.0" layoutY="169.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="C#">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="14.0" layoutY="209.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="C++">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="14.0" layoutY="252.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Python">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="14.0" layoutY="294.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="JS">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Separator focusTraversable="false" layoutX="14.0" layoutY="396.0" prefHeight="3.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-style: solid; -fx-border-color: #ccc; -fx-border-width: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <Button fx:id="closeBtn" layoutX="14.0" layoutY="410.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" stylesheets="@styles/main.css" text="Close">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fill="#434343" layoutX="396.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java test">
+         <font>
+            <Font name="Montserrat Bold" size="29.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radio_btn_1" layoutX="237.0" layoutY="198.0" mnemonicParsing="false" text="Console.Write()" textFill="#5e5e5e">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="answers" />
+         </toggleGroup>
+      </RadioButton>
+      <Text fx:id="question_text" fill="#727272" layoutX="237.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which of the options is the correct format for displaying information on the screen?" wrappingWidth="494.8199462890625">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radio_btn_2" layoutX="237.0" layoutY="230.0" mnemonicParsing="false" text="System.out.println()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_btn_3" layoutX="237.0" layoutY="263.0" mnemonicParsing="false" text="console.log()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_btn_4" layoutX="237.0" layoutY="299.0" mnemonicParsing="false" text="print()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="answerBtn" layoutX="387.0" layoutY="384.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" stylesheets="@styles/main.css" text="Ok">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
